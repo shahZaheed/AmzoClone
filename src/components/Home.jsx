@@ -1,6 +1,15 @@
 import React from 'react'
 import './Home.css';
 import Product from './Product';
+import Table from './Table';
+import banner1 from '../assets/CourseLogo_resized.png'
+import moduleName from '../assets/banner1.png'
+import { Container, Row, Col } from 'react-bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+
 
 const Home = () => {
   return (
@@ -8,10 +17,17 @@ const Home = () => {
       <div className="home__container">
         <img
           className="home__image"
-          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
+          // src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
+          src={banner1}
+
           alt=""
         />
 
+        <div className='home__row'>
+         
+        
+          <Table />
+        </div>
         <div className="home__row">
           <Product
             id="12321341"
